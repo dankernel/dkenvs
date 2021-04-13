@@ -17,6 +17,7 @@ alias p='ping google.com'
 # System
 alias mv='mv -i'
 alias c='clear'
+alias noti='python3 ~/shell/notifications/telegram_main.py'
 
 # Cd
 alias u='cd ../'
