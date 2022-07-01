@@ -23,6 +23,12 @@ alias noti='python3 ~/shell/notifications/telegram_main.py'
 alias u='cd ../'
 alias uu='cd ../../'
 
+move_to_trash () {
+    mv "$@" ~/temp
+}
+
+alias rm='move_to_trash'
+
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
