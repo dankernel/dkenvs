@@ -2,7 +2,7 @@
 
 # User specific aliases and functions
 export TERM='xterm-256color'
-export LS_COLORS="di=91;40":"ex=0;42":"ln=96;40":"so=93;40"
+export LS_COLORS="di=91;40":"ex=32;40":"ln=96;40":"so=93;40"
 
 # Ls
 alias ls='ls --color=auto -Ch'
