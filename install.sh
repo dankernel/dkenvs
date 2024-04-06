@@ -10,6 +10,16 @@ CYAN='\033[0;36m'
 WHITE='\033[0;37m'
 NC='\033[0m' # No Color
 
+if [[ "$SHELL" == */bash ]]; then
+    echo -e "${GREEN}[PASS] Current shell is bash.${NC}"
+elif [[ "$SHELL" == */zsh ]]; then
+    echo -e "${RED}[FAIL] Current shell is zsh.${NC}"
+    exit 0
+else
+    echo -e "${RED}[FAIL] The current shell is a different kind of shell : $SHELL${NC}"
+    exit 0
+fi
+
 echo -e "${YELLOW}Install bashrc${NC}"
 cp ~/.bashrc ~/.bashrc.old
 cp config/.bashrc ~/.bashrc
